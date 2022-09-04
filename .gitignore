@@ -1,0 +1,10 @@
+/node_modules
+src/config.json
+
+# production
+/dist
+.cache
+
+# misc
+.DS_Store
+.env
