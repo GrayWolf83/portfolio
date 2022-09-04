@@ -1,7 +1,8 @@
 import React from 'react'
+import Pages from './pages'
 
 const App: React.FC = () => {
-	return <h2>App</h2>
+	return <Pages />
 }
 
 export default App

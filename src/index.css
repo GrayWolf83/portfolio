@@ -1,0 +1,14 @@
+html,
+body {
+	margin: 0;
+	font-family: 'Roboto';
+}
+
+a,
+input {
+	color: inherit;
+}
+
+a {
+	text-decoration: none;
+}

@@ -1,19 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component App snapshot 1`] = `
+exports[`Header component Header snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h2>
-        App
-      </h2>
+      <header
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-hip9hq-MuiPaper-root-MuiAppBar-root"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+        >
+          <a
+            href="/"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h5 css-cntv86-MuiTypography-root"
+            >
+              GitHub view
+            </h2>
+          </a>
+        </div>
+      </header>
     </div>
   </body>,
   "container": <div>
-    <h2>
-      App
-    </h2>
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-hip9hq-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      >
+        <a
+          href="/"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h5 css-cntv86-MuiTypography-root"
+          >
+            GitHub view
+          </h2>
+        </a>
+      </div>
+    </header>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
