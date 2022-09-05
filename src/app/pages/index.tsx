@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import MainLayout from '../layouts/main'
 import Home from './home'
 import Search from './search'
@@ -12,6 +12,7 @@ const Pages: React.FC = () => {
 				<Route path='/' element={<Home />} />
 				<Route path='/search' element={<Search />} />
 				<Route path='/user/:id' element={<User />} />
+				<Route path='*' element={<Navigate to='/' />} />
 			</Routes>
 		</MainLayout>
 	)
