@@ -1,23 +1,25 @@
+import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
-import Header from './Header'
+import Search from './search'
 
-describe('Header component', () => {
-	it('Header render', () => {
+describe('Search page', () => {
+	test('User render', () => {
 		render(
 			<BrowserRouter>
-				<Header />
+				<Search />
 			</BrowserRouter>,
 		)
 
-		expect(screen.getByText(/github/i)).toBeInTheDocument()
+		const search = screen.getByText(/Search/)
+		expect(search).toBeInTheDocument()
 	})
 
-	it('Header snapshot', () => {
+	test('User snapshot', () => {
 		expect(
 			render(
 				<BrowserRouter>
-					<Header />
+					<Search />
 				</BrowserRouter>,
 			),
 		).toMatchSnapshot()

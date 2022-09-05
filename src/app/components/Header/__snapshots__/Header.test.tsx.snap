@@ -9,6 +9,33 @@ Object {
         class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-hip9hq-MuiPaper-root-MuiAppBar-root"
       >
         <div
+          class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+        >
+          <div
+            class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+          >
+            <a
+              href="/"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h5 css-cntv86-MuiTypography-root"
+              >
+                GitHub view
+              </h2>
+            </a>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-hip9hq-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+      >
+        <div
           class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
         >
           <a
@@ -21,25 +48,6 @@ Object {
             </h2>
           </a>
         </div>
-      </header>
-    </div>
-  </body>,
-  "container": <div>
-    <header
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-hip9hq-MuiPaper-root-MuiAppBar-root"
-    >
-      <div
-        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
-      >
-        <a
-          href="/"
-        >
-          <h2
-            class="MuiTypography-root MuiTypography-h5 css-cntv86-MuiTypography-root"
-          >
-            GitHub view
-          </h2>
-        </a>
       </div>
     </header>
   </div>,

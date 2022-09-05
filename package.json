@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "deploy": "parcel build src/index.html --public-url ./",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "component": "npx generate-react-cli component",
+    "page": "npx generate-react-cli component --type=page"
   },
   "author": "Сергей Бернякович",
   "license": "MIT",

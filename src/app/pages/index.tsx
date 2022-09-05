@@ -2,14 +2,16 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import MainLayout from '../layouts/main'
 import Home from './home'
-import Info from './info'
+import Search from './search'
+import User from './user'
 
 const Pages: React.FC = () => {
 	return (
 		<MainLayout>
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/info' element={<Info />} />
+				<Route path='/search' element={<Search />} />
+				<Route path='/user/:id' element={<User />} />
 			</Routes>
 		</MainLayout>
 	)
