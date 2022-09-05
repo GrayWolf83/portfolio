@@ -11,7 +11,7 @@ describe('TemplateName page', () => {
 			</BrowserRouter>,
 		)
 
-		const templateName = screen.getByText(/TemplateName/)
+		const templateName = screen.getByTestId('TemplateName')
 		expect(templateName).toBeInTheDocument()
 	})
 

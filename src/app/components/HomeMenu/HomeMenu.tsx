@@ -9,8 +9,6 @@ import {
 	Button,
 } from '@mui/material'
 import Search from '@mui/icons-material/Search'
-
-import photo from '../../images/photo.png'
 import { Link } from 'react-router-dom'
 
 interface IHomeMenu {}
@@ -21,7 +19,7 @@ const HomeMenu: React.FC<IHomeMenu> = () => {
 			<Grid item xs={12} md={6}>
 				<Card sx={{ height: '100%' }}>
 					<Avatar
-						src={photo}
+						src='https://avatars.githubusercontent.com/u/78337844?v=4'
 						sx={{
 							width: '150px',
 							height: '150px',
@@ -38,7 +36,7 @@ const HomeMenu: React.FC<IHomeMenu> = () => {
 						</Typography>
 					</CardContent>
 					<CardActions>
-						<Link to='/user/12345678'>
+						<Link to='/user/GrayWolf83'>
 							<Button size='small'>Открыть</Button>
 						</Link>
 					</CardActions>

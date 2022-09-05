@@ -1,17 +1,21 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from '../../store'
 import User from './user'
 
 describe('User page', () => {
 	test('User render', () => {
 		render(
-			<BrowserRouter>
-				<User />
-			</BrowserRouter>,
+			<Provider store={store}>
+				<BrowserRouter>
+					<User />
+				</BrowserRouter>
+			</Provider>,
 		)
 
-		const user = screen.getByText(/User/)
+		const user = screen.getByTestId('User')
 
 		expect(user).toBeInTheDocument()
 	})
@@ -19,9 +23,11 @@ describe('User page', () => {
 	test('User snapshot', () => {
 		expect(
 			render(
-				<BrowserRouter>
-					<User />
-				</BrowserRouter>,
+				<Provider store={store}>
+					<BrowserRouter>
+						<User />
+					</BrowserRouter>
+				</Provider>,
 			),
 		).toMatchSnapshot()
 	})
