@@ -1,68 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`User page User snapshot 1`] = `
+exports[`Loader component Loader snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        data-testid="User"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-222ito-MuiPaper-root-MuiCard-root"
+        data-testid="Loader"
       >
-        <a
-          href="/"
+        <div
+          class="MuiBox-root css-8atqhb"
         >
-          <button
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1kuq5xv-MuiButtonBase-root-MuiIconButton-root"
-            tabindex="0"
-            type="button"
+          <span
+            class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-eglki6-MuiLinearProgress-root"
+            role="progressbar"
           >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-h0nxb2-MuiSvgIcon-root"
-              data-testid="HomeIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-              />
-            </svg>
             <span
-              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-5ir5xx-MuiLinearProgress-bar1"
             />
-          </button>
-        </a>
+            <span
+              class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-1r8wrcl-MuiLinearProgress-bar2"
+            />
+          </span>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      data-testid="User"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-222ito-MuiPaper-root-MuiCard-root"
+      data-testid="Loader"
     >
-      <a
-        href="/"
+      <div
+        class="MuiBox-root css-8atqhb"
       >
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1kuq5xv-MuiButtonBase-root-MuiIconButton-root"
-          tabindex="0"
-          type="button"
+        <span
+          class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-eglki6-MuiLinearProgress-root"
+          role="progressbar"
         >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-h0nxb2-MuiSvgIcon-root"
-            data-testid="HomeIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-            />
-          </svg>
           <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-5ir5xx-MuiLinearProgress-bar1"
           />
-        </button>
-      </a>
+          <span
+            class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-1r8wrcl-MuiLinearProgress-bar2"
+          />
+        </span>
+      </div>
     </div>
   </div>,
   "debug": [Function],

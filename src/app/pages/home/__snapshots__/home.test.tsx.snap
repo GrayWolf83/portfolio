@@ -42,7 +42,7 @@ Object {
             >
               <img
                 class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
-                src="photo.png"
+                src="https://avatars.githubusercontent.com/u/78337844?v=4"
               />
             </div>
             <div
@@ -58,7 +58,7 @@ Object {
               class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
             >
               <a
-                href="/user/12345678"
+                href="/user/GrayWolf83"
               >
                 <button
                   class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
@@ -161,7 +161,7 @@ Object {
           >
             <img
               class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
-              src="photo.png"
+              src="https://avatars.githubusercontent.com/u/78337844?v=4"
             />
           </div>
           <div
@@ -177,7 +177,7 @@ Object {
             class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
           >
             <a
-              href="/user/12345678"
+              href="/user/GrayWolf83"
             >
               <button
                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
