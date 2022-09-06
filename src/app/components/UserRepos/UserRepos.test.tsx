@@ -3,31 +3,28 @@ import { render, screen } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from '../../store'
-import User from './user'
+import UserRepos from './UserRepos'
 
-describe('User page', () => {
-	test('User render', () => {
+describe('UserRepos component', () => {
+	test('UserRepos render', () => {
 		render(
 			<Provider store={store}>
 				<BrowserRouter>
-					<User />
+					<UserRepos />
 				</BrowserRouter>
 			</Provider>,
 		)
 
-		const user = screen.getByTestId('User')
-
-		expect(user).toBeInTheDocument()
+		const userRepos = screen.getByTestId('UserRepos')
+		expect(userRepos).toBeInTheDocument()
 	})
 
-	test('User snapshot', () => {
+	test('UserRepos snapshot', () => {
 		expect(
 			render(
-				<Provider store={store}>
-					<BrowserRouter>
-						<User />
-					</BrowserRouter>
-				</Provider>,
+				<BrowserRouter>
+					<UserRepos />
+				</BrowserRouter>,
 			),
 		).toMatchSnapshot()
 	})

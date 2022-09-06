@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom'
 import GoToHomeButton from '../../components/GoToHomeButton'
 import Loader from '../../components/Loader'
 import UserInfo from '../../components/UserInfo'
+import UserRepos from '../../components/UserRepos'
+import UserTechnologies from '../../components/UserTechnologies'
 import { useAppDispatch, useAppSelector } from '../../hooks/useAppReduxHooks'
 import {
 	getCurrentUser,
@@ -43,15 +45,17 @@ const User: React.FC<IUser> = () => {
 		}
 	}, [repos])
 
-	console.log('repos', repos)
-
 	return (
 		<div data-testid='User'>
 			<GoToHomeButton />
 			{isLoading ? (
 				<Loader />
 			) : (
-				<>{currentUser && <UserInfo user={currentUser} />}</>
+				<Grid container spacing={3}>
+					<UserInfo />
+					<UserTechnologies />
+					<UserRepos />
+				</Grid>
 			)}
 		</div>
 	)
