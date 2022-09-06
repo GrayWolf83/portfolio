@@ -8,7 +8,9 @@ import { useAppDispatch, useAppSelector } from '../../hooks/useAppReduxHooks'
 import {
 	getCurrentUser,
 	getUserLoadingStatus,
+	getUserRepos,
 	loadUser,
+	loadUserSkills,
 } from '../../store/user'
 
 interface IUser {}
@@ -18,6 +20,7 @@ const User: React.FC<IUser> = () => {
 	const dispatch = useAppDispatch()
 	const currentUser = useAppSelector(getCurrentUser())
 	const isLoading = useAppSelector(getUserLoadingStatus())
+	const repos = useAppSelector(getUserRepos())
 
 	React.useEffect(() => {
 		document.title = 'Портфолио | GitHub view'
@@ -33,7 +36,14 @@ const User: React.FC<IUser> = () => {
 		loadCurrentUser()
 	}, [login])
 
-	console.log('user', currentUser)
+	React.useEffect(() => {
+		if (repos.length) {
+			const names = repos.map((repo) => repo.full_name)
+			dispatch(loadUserSkills(names))
+		}
+	}, [repos])
+
+	console.log('repos', repos)
 
 	return (
 		<div data-testid='User'>

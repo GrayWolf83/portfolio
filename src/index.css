@@ -1,8 +1,12 @@
+:root {
+	--primary-color: #217074;
+}
+
 html,
 body {
 	margin: 0;
 	font-family: 'Roboto';
-	color: #217074;
+	color: var(--primary-color);
 }
 
 a,

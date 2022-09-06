@@ -1,3 +1,4 @@
+import axios from 'axios'
 import httpService from './http.service'
 
 const userService = {
@@ -16,9 +17,14 @@ const userService = {
 		const { data } = await httpService.get(`users/${login}/repos`)
 		return data
 	},
-	getSkills: async (addr: string) => {
-		const { data } = await httpService.get(addr)
-		console.log('service', data)
+	getSkills: async (names: string[]) => {
+		const data = await axios.all(
+			names.map((name) =>
+				httpService
+					.get(`repos/${name}/languages`)
+					.then((res) => res.data),
+			),
+		)
 		return data
 	},
 }
