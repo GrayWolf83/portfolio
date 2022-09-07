@@ -1,61 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loader component Loader snapshot 1`] = `
+exports[`GoToHomeButton component GoToHomeButton snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="MuiBox-root css-1yuakfv"
-        data-testid="Loader"
+      <a
+        data-testid="GoToHomeButton"
+        href="/"
       >
-        <span
-          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
-          role="progressbar"
-          style="width: 40px; height: 40px;"
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1kuq5xv-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
         >
           <svg
-            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-            viewBox="22 22 44 44"
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-h0nxb2-MuiSvgIcon-root"
+            data-testid="HomeIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            <circle
-              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
-              cx="44"
-              cy="44"
-              fill="none"
-              r="20.2"
-              stroke-width="3.6"
+            <path
+              d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
             />
           </svg>
-        </span>
-      </div>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </a>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="MuiBox-root css-1yuakfv"
-      data-testid="Loader"
+    <a
+      data-testid="GoToHomeButton"
+      href="/"
     >
-      <span
-        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
-        role="progressbar"
-        style="width: 40px; height: 40px;"
+      <button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1kuq5xv-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
       >
         <svg
-          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-          viewBox="22 22 44 44"
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-h0nxb2-MuiSvgIcon-root"
+          data-testid="HomeIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
         >
-          <circle
-            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
-            cx="44"
-            cy="44"
-            fill="none"
-            r="20.2"
-            stroke-width="3.6"
+          <path
+            d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
           />
         </svg>
-      </span>
-    </div>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </a>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -7,19 +7,20 @@ import Grid from '@mui/material/Grid'
 import Link from '@mui/material/Link'
 import Typography from '@mui/material/Typography'
 import { useAppSelector } from '../../hooks/useAppReduxHooks'
-import { getUserRepos } from '../../store/user'
+import { getUserLoadingStatus, getUserRepos } from '../../store/user'
 import Loader from '../Loader'
 
 interface IUserRepos {}
 
 const UserRepos: React.FC<IUserRepos> = () => {
 	const repos = useAppSelector(getUserRepos())
+	const isLoading = useAppSelector(getUserLoadingStatus())
 
 	return (
 		<Grid item xs={12} data-testid='UserRepos'>
 			<Typography variant='h6'>Проекты:</Typography>
 			<Grid container spacing={2}>
-				{repos.length ? (
+				{repos.length && !isLoading ? (
 					repos.map((repo) => (
 						<Grid item key={repo.name} xs={12} sm={4}>
 							<Card

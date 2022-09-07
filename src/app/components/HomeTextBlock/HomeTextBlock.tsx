@@ -5,7 +5,7 @@ interface IHomeTextBlock {}
 
 const HomeTextBlock: React.FC<IHomeTextBlock> = () => {
 	return (
-		<>
+		<div data-testid='HomeTextBlock'>
 			<Box
 				sx={{
 					mt: '20px',
@@ -30,7 +30,7 @@ const HomeTextBlock: React.FC<IHomeTextBlock> = () => {
 				в удобное портфолио и может использоваться рекрутерами для
 				просмотра аккаунтов и оценки уровня кандидатов.
 			</Typography>
-		</>
+		</div>
 	)
 }
 

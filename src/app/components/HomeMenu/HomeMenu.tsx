@@ -15,7 +15,7 @@ interface IHomeMenu {}
 
 const HomeMenu: React.FC<IHomeMenu> = () => {
 	return (
-		<Grid container spacing={2}>
+		<Grid container spacing={2} data-testid='HomeMenu'>
 			<Grid item xs={12} md={6}>
 				<Card sx={{ height: '100%' }}>
 					<Avatar

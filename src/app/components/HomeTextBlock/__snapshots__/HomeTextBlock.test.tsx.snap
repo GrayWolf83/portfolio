@@ -6,6 +6,39 @@ Object {
   "baseElement": <body>
     <div>
       <div
+        data-testid="HomeTextBlock"
+      >
+        <div
+          class="MuiBox-root css-cph0fm"
+        >
+          <div
+            class="MuiBox-root css-s8vbhp"
+          >
+            <h4
+              class="MuiTypography-root MuiTypography-h4 css-11kybd2-MuiTypography-root"
+            >
+              Сергей Бернякович
+            </h4>
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-1invrju-MuiTypography-root"
+            >
+              Frontend разработчик (React)
+            </h5>
+          </div>
+        </div>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-764ec4-MuiTypography-root"
+        >
+          Данный сервис преобразовывает информацию о пользователях GitHub в удобное портфолио и может использоваться рекрутерами для просмотра аккаунтов и оценки уровня кандидатов.
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      data-testid="HomeTextBlock"
+    >
+      <div
         class="MuiBox-root css-cph0fm"
       >
         <div
@@ -29,31 +62,6 @@ Object {
         Данный сервис преобразовывает информацию о пользователях GitHub в удобное портфолио и может использоваться рекрутерами для просмотра аккаунтов и оценки уровня кандидатов.
       </p>
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="MuiBox-root css-cph0fm"
-    >
-      <div
-        class="MuiBox-root css-s8vbhp"
-      >
-        <h4
-          class="MuiTypography-root MuiTypography-h4 css-11kybd2-MuiTypography-root"
-        >
-          Сергей Бернякович
-        </h4>
-        <h5
-          class="MuiTypography-root MuiTypography-h5 css-1invrju-MuiTypography-root"
-        >
-          Frontend разработчик (React)
-        </h5>
-      </div>
-    </div>
-    <p
-      class="MuiTypography-root MuiTypography-body1 css-764ec4-MuiTypography-root"
-    >
-      Данный сервис преобразовывает информацию о пользователях GitHub в удобное портфолио и может использоваться рекрутерами для просмотра аккаунтов и оценки уровня кандидатов.
-    </p>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

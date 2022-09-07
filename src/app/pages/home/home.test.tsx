@@ -11,9 +11,20 @@ describe('Home page', () => {
 			</BrowserRouter>,
 		)
 
-		const home = screen.getByText(/Frontend/)
+		const home = screen.getByTestId('Home')
 
 		expect(home).toBeInTheDocument()
+	})
+
+	test('In Home page rendered components HomeMenu & HomeTextBlock', () => {
+		render(
+			<BrowserRouter>
+				<Home />
+			</BrowserRouter>,
+		)
+
+		expect(screen.getByTestId('HomeMenu')).toBeInTheDocument()
+		expect(screen.getByTestId('HomeTextBlock')).toBeInTheDocument()
 	})
 
 	test('Home snapshot', () => {

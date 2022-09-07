@@ -6,30 +6,166 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiBox-root css-cph0fm"
+        data-testid="Home"
       >
         <div
-          class="MuiBox-root css-s8vbhp"
+          data-testid="HomeTextBlock"
         >
-          <h4
-            class="MuiTypography-root MuiTypography-h4 css-11kybd2-MuiTypography-root"
+          <div
+            class="MuiBox-root css-cph0fm"
           >
-            Сергей Бернякович
-          </h4>
-          <h5
-            class="MuiTypography-root MuiTypography-h5 css-1invrju-MuiTypography-root"
+            <div
+              class="MuiBox-root css-s8vbhp"
+            >
+              <h4
+                class="MuiTypography-root MuiTypography-h4 css-11kybd2-MuiTypography-root"
+              >
+                Сергей Бернякович
+              </h4>
+              <h5
+                class="MuiTypography-root MuiTypography-h5 css-1invrju-MuiTypography-root"
+              >
+                Frontend разработчик (React)
+              </h5>
+            </div>
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-764ec4-MuiTypography-root"
           >
-            Frontend разработчик (React)
-          </h5>
+            Данный сервис преобразовывает информацию о пользователях GitHub в удобное портфолио и может использоваться рекрутерами для просмотра аккаунтов и оценки уровня кандидатов.
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+          data-testid="HomeMenu"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
+            >
+              <div
+                class="MuiAvatar-root MuiAvatar-circular css-b0s0xk-MuiAvatar-root"
+              >
+                <img
+                  class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+                  src="https://avatars.githubusercontent.com/u/78337844?v=4"
+                />
+              </div>
+              <div
+                class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+              >
+                <div
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-1y15g74-MuiTypography-root"
+                >
+                  Мое портфолио
+                </div>
+              </div>
+              <div
+                class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+              >
+                <a
+                  href="/user/GrayWolf83"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    Открыть
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-3tvku1-MuiSvgIcon-root"
+                data-testid="SearchIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+              </svg>
+              <div
+                class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+              >
+                <div
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-1y15g74-MuiTypography-root"
+                >
+                  Поиск пользователей
+                </div>
+              </div>
+              <div
+                class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+              >
+                <a
+                  href="/search"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    Открыть
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <p
-        class="MuiTypography-root MuiTypography-body1 css-764ec4-MuiTypography-root"
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      data-testid="Home"
+    >
+      <div
+        data-testid="HomeTextBlock"
       >
-        Данный сервис преобразовывает информацию о пользователях GitHub в удобное портфолио и может использоваться рекрутерами для просмотра аккаунтов и оценки уровня кандидатов.
-      </p>
+        <div
+          class="MuiBox-root css-cph0fm"
+        >
+          <div
+            class="MuiBox-root css-s8vbhp"
+          >
+            <h4
+              class="MuiTypography-root MuiTypography-h4 css-11kybd2-MuiTypography-root"
+            >
+              Сергей Бернякович
+            </h4>
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-1invrju-MuiTypography-root"
+            >
+              Frontend разработчик (React)
+            </h5>
+          </div>
+        </div>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-764ec4-MuiTypography-root"
+        >
+          Данный сервис преобразовывает информацию о пользователях GitHub в удобное портфолио и может использоваться рекрутерами для просмотра аккаунтов и оценки уровня кандидатов.
+        </p>
+      </div>
       <div
         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+        data-testid="HomeMenu"
       >
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
@@ -118,124 +254,6 @@ Object {
                 </button>
               </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="MuiBox-root css-cph0fm"
-    >
-      <div
-        class="MuiBox-root css-s8vbhp"
-      >
-        <h4
-          class="MuiTypography-root MuiTypography-h4 css-11kybd2-MuiTypography-root"
-        >
-          Сергей Бернякович
-        </h4>
-        <h5
-          class="MuiTypography-root MuiTypography-h5 css-1invrju-MuiTypography-root"
-        >
-          Frontend разработчик (React)
-        </h5>
-      </div>
-    </div>
-    <p
-      class="MuiTypography-root MuiTypography-body1 css-764ec4-MuiTypography-root"
-    >
-      Данный сервис преобразовывает информацию о пользователях GitHub в удобное портфолио и может использоваться рекрутерами для просмотра аккаунтов и оценки уровня кандидатов.
-    </p>
-    <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
-    >
-      <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
-      >
-        <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circular css-b0s0xk-MuiAvatar-root"
-          >
-            <img
-              class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
-              src="https://avatars.githubusercontent.com/u/78337844?v=4"
-            />
-          </div>
-          <div
-            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
-          >
-            <div
-              class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-1y15g74-MuiTypography-root"
-            >
-              Мое портфолио
-            </div>
-          </div>
-          <div
-            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
-          >
-            <a
-              href="/user/GrayWolf83"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
-                tabindex="0"
-                type="button"
-              >
-                Открыть
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
-      >
-        <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
-        >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-3tvku1-MuiSvgIcon-root"
-            data-testid="SearchIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-            />
-          </svg>
-          <div
-            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
-          >
-            <div
-              class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-1y15g74-MuiTypography-root"
-            >
-              Поиск пользователей
-            </div>
-          </div>
-          <div
-            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
-          >
-            <a
-              href="/search"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
-                tabindex="0"
-                type="button"
-              >
-                Открыть
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
-              </button>
-            </a>
           </div>
         </div>
       </div>
