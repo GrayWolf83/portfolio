@@ -75,7 +75,7 @@ export const searchUsersList =
 		}
 	}
 
-export const getUsersList = () => (state: RootState) => {
+export const getSearchUsersList = () => (state: RootState) => {
 	return state.search.entities
 }
 
@@ -89,6 +89,10 @@ export const getSearchLoadingStatus = () => (state: RootState) => {
 
 export const getSearchCurrentPage = () => (state: RootState) => {
 	return state.search.page
+}
+
+export const getSearchValue = () => (state: RootState) => {
+	return state.search.search
 }
 
 export default searchSlice.reducer
