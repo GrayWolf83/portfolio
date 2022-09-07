@@ -22,9 +22,11 @@ describe('TemplateName component', () => {
 	test('TemplateName snapshot', () => {
 		expect(
 			render(
-				<BrowserRouter>
-					<TemplateName />
-				</BrowserRouter>,
+				<Provider store={store}>
+					<BrowserRouter>
+						<TemplateName />
+					</BrowserRouter>
+				</Provider>,
 			),
 		).toMatchSnapshot()
 	})

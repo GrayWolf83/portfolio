@@ -22,9 +22,11 @@ describe('UserRepos component', () => {
 	test('UserRepos snapshot', () => {
 		expect(
 			render(
-				<BrowserRouter>
-					<UserRepos />
-				</BrowserRouter>,
+				<Provider store={store}>
+					<BrowserRouter>
+						<UserRepos />
+					</BrowserRouter>
+				</Provider>,
 			),
 		).toMatchSnapshot()
 	})

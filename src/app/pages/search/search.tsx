@@ -9,10 +9,10 @@ const Search: React.FC<ISearch> = () => {
 	}, [])
 
 	return (
-		<>
+		<div data-testid='Search'>
 			<GoToHomeButton />
 			<h2>Search</h2>
-		</>
+		</div>
 	)
 }
 

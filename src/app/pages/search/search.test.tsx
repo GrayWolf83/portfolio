@@ -4,18 +4,18 @@ import { BrowserRouter } from 'react-router-dom'
 import Search from './search'
 
 describe('Search page', () => {
-	test('User render', () => {
+	test('Search render', () => {
 		render(
 			<BrowserRouter>
 				<Search />
 			</BrowserRouter>,
 		)
 
-		const search = screen.getByText(/Search/)
+		const search = screen.getByTestId('Search')
 		expect(search).toBeInTheDocument()
 	})
 
-	test('User snapshot', () => {
+	test('Search snapshot', () => {
 		expect(
 			render(
 				<BrowserRouter>

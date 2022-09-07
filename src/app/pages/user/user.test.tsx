@@ -3,28 +3,28 @@ import { render, screen } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from '../../store'
-import UserTechnologies from './UserTechnologies'
+import Search from './user'
 
-describe('UserTechnologies component', () => {
-	test('UserTechnologies render', () => {
+describe('Search page', () => {
+	test('User render', () => {
 		render(
 			<Provider store={store}>
 				<BrowserRouter>
-					<UserTechnologies />
+					<Search />
 				</BrowserRouter>
 			</Provider>,
 		)
 
-		const userTechnologies = screen.getByTestId('UserTechnologies')
-		expect(userTechnologies).toBeInTheDocument()
+		const user = screen.getByTestId('User')
+		expect(user).toBeInTheDocument()
 	})
 
-	test('UserTechnologies snapshot', () => {
+	test('User snapshot', () => {
 		expect(
 			render(
 				<Provider store={store}>
 					<BrowserRouter>
-						<UserTechnologies />
+						<Search />
 					</BrowserRouter>
 				</Provider>,
 			),

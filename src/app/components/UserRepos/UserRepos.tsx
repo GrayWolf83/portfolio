@@ -1,15 +1,14 @@
-import {
-	Button,
-	Card,
-	CardActions,
-	CardContent,
-	Grid,
-	Link,
-	Typography,
-} from '@mui/material'
 import React from 'react'
+import Button from '@mui/material/Button'
+import Card from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
+import CardContent from '@mui/material/CardContent'
+import Grid from '@mui/material/Grid'
+import Link from '@mui/material/Link'
+import Typography from '@mui/material/Typography'
 import { useAppSelector } from '../../hooks/useAppReduxHooks'
 import { getUserRepos } from '../../store/user'
+import Loader from '../Loader'
 
 interface IUserRepos {}
 
@@ -20,7 +19,7 @@ const UserRepos: React.FC<IUserRepos> = () => {
 		<Grid item xs={12} data-testid='UserRepos'>
 			<Typography variant='h6'>Проекты:</Typography>
 			<Grid container spacing={2}>
-				{repos.length &&
+				{repos.length ? (
 					repos.map((repo) => (
 						<Grid item key={repo.name} xs={12} sm={4}>
 							<Card
@@ -32,7 +31,7 @@ const UserRepos: React.FC<IUserRepos> = () => {
 									justifyContent: 'space-between',
 								}}>
 								<CardContent>
-									<Typography variant='h5'>
+									<Typography variant='h5' color='primary'>
 										{repo.name}
 									</Typography>
 									{repo.description && (
@@ -66,7 +65,10 @@ const UserRepos: React.FC<IUserRepos> = () => {
 								</CardActions>
 							</Card>
 						</Grid>
-					))}
+					))
+				) : (
+					<Loader />
+				)}
 			</Grid>
 		</Grid>
 	)

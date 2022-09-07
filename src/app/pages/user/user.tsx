@@ -2,14 +2,12 @@ import { Grid } from '@mui/material'
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import GoToHomeButton from '../../components/GoToHomeButton'
-import Loader from '../../components/Loader'
 import UserInfo from '../../components/UserInfo'
 import UserRepos from '../../components/UserRepos'
 import UserTechnologies from '../../components/UserTechnologies'
 import { useAppDispatch, useAppSelector } from '../../hooks/useAppReduxHooks'
 import {
 	getCurrentUser,
-	getUserLoadingStatus,
 	getUserRepos,
 	loadUser,
 	loadUserSkills,
@@ -21,7 +19,6 @@ const User: React.FC<IUser> = () => {
 	const { login } = useParams()
 	const dispatch = useAppDispatch()
 	const currentUser = useAppSelector(getCurrentUser())
-	const isLoading = useAppSelector(getUserLoadingStatus())
 	const repos = useAppSelector(getUserRepos())
 
 	React.useEffect(() => {
@@ -48,15 +45,11 @@ const User: React.FC<IUser> = () => {
 	return (
 		<div data-testid='User'>
 			<GoToHomeButton />
-			{isLoading ? (
-				<Loader />
-			) : (
-				<Grid container spacing={3}>
-					<UserInfo />
-					<UserTechnologies />
-					<UserRepos />
-				</Grid>
-			)}
+			<Grid container spacing={3}>
+				<UserInfo />
+				<UserTechnologies />
+				<UserRepos />
+			</Grid>
 		</div>
 	)
 }

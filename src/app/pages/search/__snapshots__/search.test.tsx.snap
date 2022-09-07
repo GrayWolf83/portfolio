@@ -1,10 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Search page User snapshot 1`] = `
+exports[`Search page Search snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <div
+        data-testid="Search"
+      >
+        <a
+          href="/"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1kuq5xv-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-h0nxb2-MuiSvgIcon-root"
+              data-testid="HomeIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+        <h2>
+          Search
+        </h2>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      data-testid="Search"
+    >
       <a
         href="/"
       >
@@ -33,35 +70,6 @@ Object {
         Search
       </h2>
     </div>
-  </body>,
-  "container": <div>
-    <a
-      href="/"
-    >
-      <button
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1kuq5xv-MuiButtonBase-root-MuiIconButton-root"
-        tabindex="0"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-h0nxb2-MuiSvgIcon-root"
-          data-testid="HomeIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-          />
-        </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
-      </button>
-    </a>
-    <h2>
-      Search
-    </h2>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -41,7 +41,9 @@ const userSlice = createSlice({
 			state.dataLoaded = true
 		},
 		userReposLoaded: (state, action: PayloadAction<IRepo[]>) => {
-			state.repos = action.payload
+			state.repos = action.payload.sort((a, b) =>
+				a.created_at > b.created_at ? -1 : 1,
+			)
 		},
 		userSkillsLoaded: (
 			state,

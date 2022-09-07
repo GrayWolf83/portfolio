@@ -1,19 +1,21 @@
 import React from 'react'
 import Box from '@mui/material/Box'
-import LinearProgress from '@mui/material/LinearProgress'
-import { Card } from '@mui/material'
+import CircularProgress from '@mui/material/CircularProgress'
 
 interface ILoader {}
 
 const Loader: React.FC<ILoader> = () => {
 	return (
-		<Card
-			sx={{ width: '70%', m: '30% auto', padding: '30px' }}
+		<Box
+			sx={{
+				width: '100%',
+				mt: '20%',
+				display: 'flex',
+				justifyContent: 'center',
+			}}
 			data-testid='Loader'>
-			<Box sx={{ width: '100%' }}>
-				<LinearProgress />
-			</Box>
-		</Card>
+			<CircularProgress />
+		</Box>
 	)
 }
 
