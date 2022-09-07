@@ -15,7 +15,6 @@ const UserTechnologies: React.FC<IUserTechnologies> = () => {
 			<Card
 				sx={{
 					height: '100%',
-					minHeight: '200px',
 					width: '100%',
 					p: '5px 0 5px',
 				}}>

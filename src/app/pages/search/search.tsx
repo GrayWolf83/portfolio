@@ -1,5 +1,7 @@
 import React from 'react'
 import GoToHomeButton from '../../components/GoToHomeButton'
+import SearchInput from '../../components/SearchInput'
+import SearchResult from '../../components/SearchResult'
 
 interface ISearch {}
 
@@ -11,7 +13,8 @@ const Search: React.FC<ISearch> = () => {
 	return (
 		<div data-testid='Search'>
 			<GoToHomeButton />
-			<h2>Search</h2>
+			<SearchInput />
+			<SearchResult />
 		</div>
 	)
 }

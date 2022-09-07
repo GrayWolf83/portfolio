@@ -10,9 +10,10 @@ const Loader: React.FC<ILoader> = () => {
 			sx={{
 				width: '100%',
 				height: '100%',
-				mt: '100px',
+				minHeight: '200px',
 				display: 'flex',
 				justifyContent: 'center',
+				alignItems: 'center',
 			}}
 			data-testid='Loader'>
 			<CircularProgress />

@@ -17,9 +17,9 @@ const UserRepos: React.FC<IUserRepos> = () => {
 	const isLoading = useAppSelector(getUserLoadingStatus())
 
 	return (
-		<Grid item xs={12} data-testid='UserRepos'>
+		<Grid item xs={12} data-testid='UserRepos' sx={{ width: '100%' }}>
 			<Typography variant='h6'>Проекты:</Typography>
-			<Grid container spacing={2}>
+			<Grid container spacing={2} sx={{ width: '100%' }}>
 				{repos.length && !isLoading ? (
 					repos.map((repo) => (
 						<Grid item key={repo.name} xs={12} sm={4}>

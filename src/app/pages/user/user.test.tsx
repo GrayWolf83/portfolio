@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import store from '../../store'
 import User from './user'
 
-describe('Search page', () => {
+describe('User page', () => {
 	test('User render', () => {
 		render(
 			<Provider store={store}>
@@ -19,7 +19,7 @@ describe('Search page', () => {
 		expect(user).toBeInTheDocument()
 	})
 
-	test('User page rendered components GoToHomeButton & UserInfo & UserTechnologies & UserRepos', () => {
+	test('User page rendered components GoBackButton & UserInfo & UserTechnologies & UserRepos', () => {
 		render(
 			<Provider store={store}>
 				<BrowserRouter>
@@ -28,7 +28,7 @@ describe('Search page', () => {
 			</Provider>,
 		)
 
-		expect(screen.getByTestId('GoToHomeButton')).toBeInTheDocument()
+		expect(screen.getByTestId('GoBackButton')).toBeInTheDocument()
 		expect(screen.getByTestId('UserInfo')).toBeInTheDocument()
 		expect(screen.getByTestId('UserTechnologies')).toBeInTheDocument()
 		expect(screen.getByTestId('UserRepos')).toBeInTheDocument()

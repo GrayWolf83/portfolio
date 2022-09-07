@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-13i4rnv-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1mum6ye-MuiGrid-root"
         data-testid="UserRepos"
       >
         <h6
@@ -15,10 +15,10 @@ Object {
           Проекты:
         </h6>
         <div
-          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1tola1h-MuiGrid-root"
         >
           <div
-            class="MuiBox-root css-1yuakfv"
+            class="MuiBox-root css-u9vudo"
             data-testid="Loader"
           >
             <span
@@ -47,7 +47,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-13i4rnv-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1mum6ye-MuiGrid-root"
       data-testid="UserRepos"
     >
       <h6
@@ -56,10 +56,10 @@ Object {
         Проекты:
       </h6>
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1tola1h-MuiGrid-root"
       >
         <div
-          class="MuiBox-root css-1yuakfv"
+          class="MuiBox-root css-u9vudo"
           data-testid="Loader"
         >
           <span

@@ -1,6 +1,7 @@
 import { Grid } from '@mui/material'
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import GoBackButton from '../../components/GoBackButton'
 import GoToHomeButton from '../../components/GoToHomeButton'
 import UserInfo from '../../components/UserInfo'
 import UserRepos from '../../components/UserRepos'
@@ -44,7 +45,7 @@ const User: React.FC<IUser> = () => {
 
 	return (
 		<div data-testid='User'>
-			<GoToHomeButton />
+			<GoBackButton />
 			<Grid container spacing={3}>
 				<UserInfo />
 				<UserTechnologies />
