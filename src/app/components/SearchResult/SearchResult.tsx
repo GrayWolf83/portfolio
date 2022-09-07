@@ -39,6 +39,7 @@ const SearchResult: React.FC<ISearchResult> = () => {
 							<CardMedia
 								component='img'
 								image={user.avatar_url}
+								height='200px'
 							/>
 
 							<CardContent>
