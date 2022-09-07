@@ -9,7 +9,8 @@ const Loader: React.FC<ILoader> = () => {
 		<Box
 			sx={{
 				width: '100%',
-				mt: '20%',
+				height: '100%',
+				mt: '100px',
 				display: 'flex',
 				justifyContent: 'center',
 			}}

@@ -8,10 +8,10 @@ const Home: React.FC = () => {
 	}, [])
 
 	return (
-		<>
+		<div data-testid='Home'>
 			<HomeTextBlock />
 			<HomeMenu />
-		</>
+		</div>
 	)
 }
 

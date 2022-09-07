@@ -9,6 +9,7 @@ Object {
         data-testid="Search"
       >
         <a
+          data-testid="GoToHomeButton"
           href="/"
         >
           <button
@@ -43,6 +44,7 @@ Object {
       data-testid="Search"
     >
       <a
+        data-testid="GoToHomeButton"
         href="/"
       >
         <button

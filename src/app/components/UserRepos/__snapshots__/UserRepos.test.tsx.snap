@@ -18,7 +18,7 @@ Object {
           class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
         >
           <div
-            class="MuiBox-root css-1y2h2zd"
+            class="MuiBox-root css-1yuakfv"
             data-testid="Loader"
           >
             <span
@@ -59,7 +59,7 @@ Object {
         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
       >
         <div
-          class="MuiBox-root css-1y2h2zd"
+          class="MuiBox-root css-1yuakfv"
           data-testid="Loader"
         >
           <span

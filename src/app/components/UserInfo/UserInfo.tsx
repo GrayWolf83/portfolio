@@ -1,18 +1,19 @@
 import React from 'react'
 import { Avatar, Card, Grid, Link, Typography } from '@mui/material'
 import { useAppSelector } from '../../hooks/useAppReduxHooks'
-import { getCurrentUser } from '../../store/user'
+import { getCurrentUser, getUserLoadingStatus } from '../../store/user'
 import Loader from '../Loader'
 
 interface IUserInfo {}
 
 const UserInfo: React.FC<IUserInfo> = () => {
 	const user = useAppSelector(getCurrentUser())
+	const isLoading = useAppSelector(getUserLoadingStatus())
 
 	return (
 		<Grid item md={4} xs={12} data-testid='UserInfo'>
-			<Card sx={{ width: '100%', height: '100%', p: '5px' }}>
-				{user ? (
+			<Card sx={{ width: '100%', height: '100%', p: '5px 0 5px 5px' }}>
+				{user && !isLoading ? (
 					<>
 						<Avatar
 							src={user.avatar_url}

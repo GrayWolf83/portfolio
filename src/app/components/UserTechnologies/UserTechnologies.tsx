@@ -1,24 +1,31 @@
 import { Box, Card, Grid, Typography } from '@mui/material'
 import React from 'react'
 import { useAppSelector } from '../../hooks/useAppReduxHooks'
-import { getUserSkills } from '../../store/user'
+import { getUserLoadingStatus, getUserSkills } from '../../store/user'
 import Loader from '../Loader'
 
 interface IUserTechnologies {}
 
 const UserTechnologies: React.FC<IUserTechnologies> = () => {
 	const skills = useAppSelector(getUserSkills())
+	const isLoading = useAppSelector(getUserLoadingStatus())
 
 	return (
 		<Grid item md={8} xs={12} data-testid='UserTechnologies'>
-			<Card sx={{ height: '100%', width: '100%', p: '5px 0' }}>
+			<Card
+				sx={{
+					height: '100%',
+					minHeight: '200px',
+					width: '100%',
+					p: '5px 0 5px',
+				}}>
 				<Typography
 					variant='h6'
 					color='primary'
 					sx={{ paddingLeft: '5px' }}>
 					Технологии:
 				</Typography>
-				{skills.length ? (
+				{skills.length && !isLoading ? (
 					<Grid container spacing={2}>
 						{skills.map((skill) => (
 							<Grid

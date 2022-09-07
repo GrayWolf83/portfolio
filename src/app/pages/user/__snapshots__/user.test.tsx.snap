@@ -9,6 +9,7 @@ Object {
         data-testid="User"
       >
         <a
+          data-testid="GoToHomeButton"
           href="/"
         >
           <button
@@ -40,10 +41,10 @@ Object {
             data-testid="UserInfo"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-13rvmuj-MuiPaper-root-MuiCard-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-8og59n-MuiPaper-root-MuiCard-root"
             >
               <div
-                class="MuiBox-root css-1y2h2zd"
+                class="MuiBox-root css-1yuakfv"
                 data-testid="Loader"
               >
                 <span
@@ -73,7 +74,7 @@ Object {
             data-testid="UserTechnologies"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1ym1xwj-MuiPaper-root-MuiCard-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1j97140-MuiPaper-root-MuiCard-root"
             >
               <h6
                 class="MuiTypography-root MuiTypography-h6 css-1v20ful-MuiTypography-root"
@@ -81,7 +82,7 @@ Object {
                 Технологии:
               </h6>
               <div
-                class="MuiBox-root css-1y2h2zd"
+                class="MuiBox-root css-1yuakfv"
                 data-testid="Loader"
               >
                 <span
@@ -119,7 +120,7 @@ Object {
               class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
             >
               <div
-                class="MuiBox-root css-1y2h2zd"
+                class="MuiBox-root css-1yuakfv"
                 data-testid="Loader"
               >
                 <span
@@ -153,6 +154,7 @@ Object {
       data-testid="User"
     >
       <a
+        data-testid="GoToHomeButton"
         href="/"
       >
         <button
@@ -184,10 +186,10 @@ Object {
           data-testid="UserInfo"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-13rvmuj-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-8og59n-MuiPaper-root-MuiCard-root"
           >
             <div
-              class="MuiBox-root css-1y2h2zd"
+              class="MuiBox-root css-1yuakfv"
               data-testid="Loader"
             >
               <span
@@ -217,7 +219,7 @@ Object {
           data-testid="UserTechnologies"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1ym1xwj-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1j97140-MuiPaper-root-MuiCard-root"
           >
             <h6
               class="MuiTypography-root MuiTypography-h6 css-1v20ful-MuiTypography-root"
@@ -225,7 +227,7 @@ Object {
               Технологии:
             </h6>
             <div
-              class="MuiBox-root css-1y2h2zd"
+              class="MuiBox-root css-1yuakfv"
               data-testid="Loader"
             >
               <span
@@ -263,7 +265,7 @@ Object {
             class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
           >
             <div
-              class="MuiBox-root css-1y2h2zd"
+              class="MuiBox-root css-1yuakfv"
               data-testid="Loader"
             >
               <span

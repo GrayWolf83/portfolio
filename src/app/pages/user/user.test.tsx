@@ -3,14 +3,14 @@ import { render, screen } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from '../../store'
-import Search from './user'
+import User from './user'
 
 describe('Search page', () => {
 	test('User render', () => {
 		render(
 			<Provider store={store}>
 				<BrowserRouter>
-					<Search />
+					<User />
 				</BrowserRouter>
 			</Provider>,
 		)
@@ -19,12 +19,27 @@ describe('Search page', () => {
 		expect(user).toBeInTheDocument()
 	})
 
+	test('User page rendered components GoToHomeButton & UserInfo & UserTechnologies & UserRepos', () => {
+		render(
+			<Provider store={store}>
+				<BrowserRouter>
+					<User />
+				</BrowserRouter>
+			</Provider>,
+		)
+
+		expect(screen.getByTestId('GoToHomeButton')).toBeInTheDocument()
+		expect(screen.getByTestId('UserInfo')).toBeInTheDocument()
+		expect(screen.getByTestId('UserTechnologies')).toBeInTheDocument()
+		expect(screen.getByTestId('UserRepos')).toBeInTheDocument()
+	})
+
 	test('User snapshot', () => {
 		expect(
 			render(
 				<Provider store={store}>
 					<BrowserRouter>
-						<Search />
+						<User />
 					</BrowserRouter>
 				</Provider>,
 			),

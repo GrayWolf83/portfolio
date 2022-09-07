@@ -10,7 +10,7 @@ describe('HomeMenu component', () => {
 			</BrowserRouter>,
 		)
 
-		const homeMenu = screen.getByText(/Мое портфолио/)
+		const homeMenu = screen.getByTestId('HomeMenu')
 		expect(homeMenu).toBeInTheDocument()
 	})
 
