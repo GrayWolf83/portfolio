@@ -1,5 +1,12 @@
 import React from 'react'
-import { Avatar, Card, Grid, Link, Typography } from '@mui/material'
+import {
+	Avatar,
+	Card,
+	CardContent,
+	Grid,
+	Link,
+	Typography,
+} from '@mui/material'
 import { useAppSelector } from '../../hooks/useAppReduxHooks'
 import { getCurrentUser, getUserLoadingStatus } from '../../store/user'
 import Loader from '../Loader'
@@ -12,9 +19,9 @@ const UserInfo: React.FC<IUserInfo> = () => {
 
 	return (
 		<Grid item md={4} xs={12} data-testid='UserInfo'>
-			<Card sx={{ width: '100%', height: '100%', p: '5px 0 5px 5px' }}>
+			<Card sx={{ width: '100%', height: '100%' }}>
 				{user && !isLoading ? (
-					<>
+					<CardContent>
 						<Avatar
 							src={user.avatar_url}
 							sx={{
@@ -44,7 +51,7 @@ const UserInfo: React.FC<IUserInfo> = () => {
 								</Link>
 							</Typography>
 						)}
-					</>
+					</CardContent>
 				) : (
 					<Loader />
 				)}

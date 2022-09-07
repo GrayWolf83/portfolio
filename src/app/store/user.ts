@@ -1,5 +1,5 @@
 import { IRepo } from '../types/IRepo'
-import { AppDispatch, RootState } from './index'
+import store, { AppDispatch, RootState } from './index'
 import { setLoadingError } from './error'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { IUser } from '../types/IUser'
@@ -45,17 +45,9 @@ const userSlice = createSlice({
 				a.created_at > b.created_at ? -1 : 1,
 			)
 		},
-		userSkillsLoaded: (
-			state,
-			action: PayloadAction<{ [key: string]: number }[]>,
-		) => {
-			let skills = action.payload
-				.map((item) => {
-					return Object.keys(item).map((name) => name)
-				})
-				.flat()
-
-			state.skills = Array.from(new Set(skills))
+		userSkillsLoaded: (state) => {
+			const skills = state.repos.map((repo) => repo.language)
+			state.skills = Array.from(new Set(skills)).filter((item) => item)
 		},
 	},
 })
@@ -77,25 +69,13 @@ export const loadUser = (login: string) => async (dispatch: AppDispatch) => {
 
 		const repos = await userService.getRepos(login)
 		dispatch(userReposLoaded(repos))
+		dispatch(userSkillsLoaded())
 	} catch (error: any) {
 		dispatch(userLoadingError(error))
 	} finally {
 		dispatch(userLoadingEnd())
 	}
 }
-
-export const loadUserSkills =
-	(names: string[]) => async (dispatch: AppDispatch) => {
-		dispatch(userLoadingStart())
-		try {
-			const skills = await userService.getSkills(names)
-			dispatch(userSkillsLoaded(skills))
-		} catch (error: any) {
-			dispatch(userLoadingError(error))
-		} finally {
-			dispatch(userLoadingEnd())
-		}
-	}
 
 export const getCurrentUser = () => (state: RootState) => {
 	return state.user.currentUser

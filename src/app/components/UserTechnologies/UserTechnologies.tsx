@@ -16,12 +16,8 @@ const UserTechnologies: React.FC<IUserTechnologies> = () => {
 				sx={{
 					height: '100%',
 					width: '100%',
-					p: '5px 0 5px',
 				}}>
-				<Typography
-					variant='h6'
-					color='primary'
-					sx={{ paddingLeft: '5px' }}>
+				<Typography variant='h6' color='primary' sx={{ ml: '5px' }}>
 					Технологии:
 				</Typography>
 				{skills.length && !isLoading ? (
@@ -32,10 +28,11 @@ const UserTechnologies: React.FC<IUserTechnologies> = () => {
 								sm={3}
 								xs={6}
 								key={skill}
-								sx={{
-									width: '100%',
-									mt: '10px',
-								}}>
+								sx={
+									{
+										// width: '100%',
+									}
+								}>
 								<Box
 									sx={{
 										width: '90px',
