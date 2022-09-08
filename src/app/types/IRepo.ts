@@ -5,4 +5,5 @@ export interface IRepo {
 	description: string
 	language: string
 	created_at: string
+	html_url: string
 }

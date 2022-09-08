@@ -111,30 +111,16 @@ Object {
               <div
                 class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
               >
-                <div
-                  class="MuiBox-root css-u9vudo"
-                  data-testid="Loader"
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
                 >
-                  <span
-                    class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
-                    role="progressbar"
-                    style="width: 40px; height: 40px;"
-                  >
-                    <svg
-                      class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                      viewBox="22 22 44 44"
-                    >
-                      <circle
-                        class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
-                        cx="44"
-                        cy="44"
-                        fill="none"
-                        r="20.2"
-                        stroke-width="3.6"
-                      />
-                    </svg>
-                  </span>
-                </div>
+                  Технологии:
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
+                >
+                  Нет данных для отображения
+                </p>
               </div>
             </div>
           </div>
@@ -146,28 +132,18 @@ Object {
               class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
             >
               <div
-                class="MuiBox-root css-u9vudo"
-                data-testid="Loader"
+                class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
               >
-                <span
-                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
-                  role="progressbar"
-                  style="width: 40px; height: 40px;"
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
                 >
-                  <svg
-                    class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                    viewBox="22 22 44 44"
-                  >
-                    <circle
-                      class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
-                      cx="44"
-                      cy="44"
-                      fill="none"
-                      r="20.2"
-                      stroke-width="3.6"
-                    />
-                  </svg>
-                </span>
+                  Проекты:
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
+                >
+                  Нет проектов для отображения
+                </p>
               </div>
             </div>
           </div>
@@ -282,30 +258,16 @@ Object {
             <div
               class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
             >
-              <div
-                class="MuiBox-root css-u9vudo"
-                data-testid="Loader"
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
               >
-                <span
-                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
-                  role="progressbar"
-                  style="width: 40px; height: 40px;"
-                >
-                  <svg
-                    class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                    viewBox="22 22 44 44"
-                  >
-                    <circle
-                      class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
-                      cx="44"
-                      cy="44"
-                      fill="none"
-                      r="20.2"
-                      stroke-width="3.6"
-                    />
-                  </svg>
-                </span>
-              </div>
+                Технологии:
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
+              >
+                Нет данных для отображения
+              </p>
             </div>
           </div>
         </div>
@@ -317,28 +279,18 @@ Object {
             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
           >
             <div
-              class="MuiBox-root css-u9vudo"
-              data-testid="Loader"
+              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
             >
-              <span
-                class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
-                role="progressbar"
-                style="width: 40px; height: 40px;"
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
               >
-                <svg
-                  class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                  viewBox="22 22 44 44"
-                >
-                  <circle
-                    class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
-                    cx="44"
-                    cy="44"
-                    fill="none"
-                    r="20.2"
-                    stroke-width="3.6"
-                  />
-                </svg>
-              </span>
+                Проекты:
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
+              >
+                Нет проектов для отображения
+              </p>
             </div>
           </div>
         </div>

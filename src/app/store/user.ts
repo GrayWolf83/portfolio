@@ -1,6 +1,5 @@
 import { IRepo } from '../types/IRepo'
-import store, { AppDispatch, RootState } from './index'
-import { setLoadingError } from './error'
+import { AppDispatch, RootState } from './index'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { IUser } from '../types/IUser'
 import userService from '../services/user.service'
@@ -71,7 +70,7 @@ export const loadUser = (login: string) => async (dispatch: AppDispatch) => {
 		dispatch(userReposLoaded(repos))
 		dispatch(userSkillsLoaded())
 	} catch (error: any) {
-		dispatch(userLoadingError(error))
+		dispatch(userLoadingError(error?.message))
 	} finally {
 		dispatch(userLoadingEnd())
 	}

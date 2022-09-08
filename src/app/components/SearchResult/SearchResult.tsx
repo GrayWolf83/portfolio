@@ -27,6 +27,7 @@ const SearchResult: React.FC<ISearchResult> = () => {
 			sx={{ my: '20px' }}>
 			{isLoading && <Loader />}
 			{Boolean(users.length) &&
+				!isLoading &&
 				users.map((user) => (
 					<Grid item xs={6} sm={3} key={user.login}>
 						<Card
