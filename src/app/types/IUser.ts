@@ -7,4 +7,5 @@ export interface IUser {
 	location: string
 	created_at: string
 	public_repos: number
+	bio: string
 }

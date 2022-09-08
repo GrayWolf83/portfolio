@@ -1,4 +1,4 @@
-import { Box, Card, Grid, Typography } from '@mui/material'
+import { Box, Card, CardContent, Grid, Typography } from '@mui/material'
 import React from 'react'
 import { useAppSelector } from '../../hooks/useAppReduxHooks'
 import { getUserLoadingStatus, getUserSkills } from '../../store/user'
@@ -11,53 +11,43 @@ const UserTechnologies: React.FC<IUserTechnologies> = () => {
 	const isLoading = useAppSelector(getUserLoadingStatus())
 
 	return (
-		<Grid item md={8} xs={12} data-testid='UserTechnologies'>
-			<Card
-				sx={{
-					height: '100%',
-					width: '100%',
-				}}>
-				<Typography variant='h6' color='primary' sx={{ ml: '5px' }}>
-					Технологии:
-				</Typography>
-				{skills.length && !isLoading ? (
-					<Grid container spacing={2}>
-						{skills.map((skill) => (
-							<Grid
-								item
-								sm={3}
-								xs={6}
-								key={skill}
-								sx={
-									{
-										// width: '100%',
-									}
-								}>
-								<Box
-									sx={{
-										width: '90px',
-										height: '90px',
-										border: '10px solid var(--primary-color)',
-										borderRadius: '50%',
-										display: 'flex',
-										flexDirection: 'column',
-										alignItems: 'center',
-										justifyContent: 'center',
-										margin: '0 auto',
-									}}>
-									<Typography
-										variant='body1'
-										color='primary'
-										textAlign='center'>
-										{skill}
-									</Typography>
-								</Box>
-							</Grid>
-						))}
-					</Grid>
-				) : (
-					<Loader />
-				)}
+		<Grid item md={4} xs={12} data-testid='UserTechnologies'>
+			<Card sx={{ width: '100%', height: '100%' }}>
+				<CardContent>
+					{isLoading ? (
+						<Loader />
+					) : (
+						<Typography variant='h6' color='primary'>
+							Технологии:
+						</Typography>
+					)}
+					{Boolean(skills.length) && !isLoading && (
+						<Grid container spacing={2}>
+							{skills.map((skill) => (
+								<Grid item sm={4} xs={6} key={skill}>
+									<Card
+										sx={{
+											height: '100%',
+											width: '100%',
+											border: '1px solid var(--primary-color)',
+										}}>
+										<Typography
+											variant='body1'
+											color='primary'
+											textAlign='center'>
+											{skill}
+										</Typography>
+									</Card>
+								</Grid>
+							))}
+						</Grid>
+					)}
+					{!Boolean(skills.length) && !isLoading && (
+						<Typography variant='body1' color='primary'>
+							Нет данных для отображения
+						</Typography>
+					)}
+				</CardContent>
 			</Card>
 		</Grid>
 	)

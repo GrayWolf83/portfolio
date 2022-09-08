@@ -1,4 +1,5 @@
 import React from 'react'
+import AppPagination from '../../components/AppPagination'
 import GoToHomeButton from '../../components/GoToHomeButton'
 import SearchInput from '../../components/SearchInput'
 import SearchResult from '../../components/SearchResult'
@@ -15,6 +16,7 @@ const Search: React.FC<ISearch> = () => {
 			<GoToHomeButton />
 			<SearchInput />
 			<SearchResult />
+			<AppPagination />
 		</div>
 	)
 }

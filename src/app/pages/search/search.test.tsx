@@ -19,7 +19,7 @@ describe('Search page', () => {
 		expect(search).toBeInTheDocument()
 	})
 
-	test('Search page rendered components GoToHomeButton & SearchInput & SearchResult', () => {
+	test('Search page rendered components GoToHomeButton & SearchInput & SearchResult & AppPagination', () => {
 		render(
 			<Provider store={store}>
 				<BrowserRouter>
@@ -31,6 +31,7 @@ describe('Search page', () => {
 		expect(screen.getByTestId('GoToHomeButton')).toBeInTheDocument()
 		expect(screen.getByTestId('SearchInput')).toBeInTheDocument()
 		expect(screen.getByTestId('SearchResult')).toBeInTheDocument()
+		expect(screen.getByTestId('AppPagination')).toBeInTheDocument()
 	})
 
 	test('Search snapshot', () => {

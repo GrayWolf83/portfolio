@@ -1,5 +1,4 @@
 import { AppDispatch, RootState } from './index'
-import { setLoadingError } from './error'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { IUser } from '../types/IUser'
 import userService from '../services/user.service'
@@ -34,6 +33,9 @@ const searchSlice = createSlice({
 		serachLoadingEnd: (state) => {
 			state.isLoading = false
 		},
+		serachLoadingError: (state, action: PayloadAction<string>) => {
+			state.error = action.payload
+		},
 		searchDataLoaded: (
 			state,
 			action: PayloadAction<{
@@ -52,8 +54,12 @@ const searchSlice = createSlice({
 	},
 })
 
-const { serachLoadingStart, serachLoadingEnd, searchDataLoaded } =
-	searchSlice.actions
+const {
+	serachLoadingStart,
+	serachLoadingEnd,
+	serachLoadingError,
+	searchDataLoaded,
+} = searchSlice.actions
 
 export const searchUsersList =
 	(search: string, page: number) => async (dispatch: AppDispatch) => {
@@ -69,7 +75,7 @@ export const searchUsersList =
 				}),
 			)
 		} catch (error: any) {
-			dispatch(setLoadingError(error))
+			dispatch(serachLoadingError(error?.message))
 		} finally {
 			dispatch(serachLoadingEnd())
 		}

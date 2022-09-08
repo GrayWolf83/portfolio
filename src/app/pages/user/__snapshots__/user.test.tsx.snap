@@ -69,8 +69,8 @@ Object {
             </div>
           </div>
           <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-9drkqd-MuiGrid-root"
-            data-testid="UserTechnologies"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+            data-testid="UserBio"
           >
             <div
               class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-u5bj03-MuiPaper-root-MuiCard-root"
@@ -107,40 +107,48 @@ Object {
             </div>
           </div>
           <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+            data-testid="UserTechnologies"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-84mkcn-MuiPaper-root-MuiCard-root"
+            >
+              <div
+                class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
+                >
+                  Технологии:
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
+                >
+                  Нет данных для отображения
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1blmxdp-MuiGrid-root"
             data-testid="UserRepos"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
-            >
-              Проекты:
-            </h6>
             <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1tola1h-MuiGrid-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
             >
               <div
-                class="MuiBox-root css-u9vudo"
-                data-testid="Loader"
+                class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
               >
-                <span
-                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
-                  role="progressbar"
-                  style="width: 40px; height: 40px;"
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
                 >
-                  <svg
-                    class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                    viewBox="22 22 44 44"
-                  >
-                    <circle
-                      class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
-                      cx="44"
-                      cy="44"
-                      fill="none"
-                      r="20.2"
-                      stroke-width="3.6"
-                    />
-                  </svg>
-                </span>
+                  Проекты:
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
+                >
+                  Нет проектов для отображения
+                </p>
               </div>
             </div>
           </div>
@@ -213,8 +221,8 @@ Object {
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-9drkqd-MuiGrid-root"
-          data-testid="UserTechnologies"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          data-testid="UserBio"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-u5bj03-MuiPaper-root-MuiCard-root"
@@ -251,40 +259,48 @@ Object {
           </div>
         </div>
         <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          data-testid="UserTechnologies"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-84mkcn-MuiPaper-root-MuiCard-root"
+          >
+            <div
+              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
+              >
+                Технологии:
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
+              >
+                Нет данных для отображения
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1blmxdp-MuiGrid-root"
           data-testid="UserRepos"
         >
-          <h6
-            class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
-          >
-            Проекты:
-          </h6>
           <div
-            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1tola1h-MuiGrid-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
           >
             <div
-              class="MuiBox-root css-u9vudo"
-              data-testid="Loader"
+              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
             >
-              <span
-                class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
-                role="progressbar"
-                style="width: 40px; height: 40px;"
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
               >
-                <svg
-                  class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                  viewBox="22 22 44 44"
-                >
-                  <circle
-                    class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
-                    cx="44"
-                    cy="44"
-                    fill="none"
-                    r="20.2"
-                    stroke-width="3.6"
-                  />
-                </svg>
-              </span>
+                Проекты:
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
+              >
+                Нет проектов для отображения
+              </p>
             </div>
           </div>
         </div>
