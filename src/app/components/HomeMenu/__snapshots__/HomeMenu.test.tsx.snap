@@ -10,7 +10,7 @@ Object {
         data-testid="HomeMenu"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
@@ -27,7 +27,7 @@ Object {
               class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
             >
               <div
-                class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-1y15g74-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-gi7hi0-MuiTypography-root"
               >
                 Мое портфолио
               </div>
@@ -39,7 +39,7 @@ Object {
                 href="/user/GrayWolf83"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-11qr2p8-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
@@ -53,7 +53,7 @@ Object {
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
@@ -73,7 +73,7 @@ Object {
               class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
             >
               <div
-                class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-1y15g74-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-gi7hi0-MuiTypography-root"
               >
                 Поиск пользователей
               </div>
@@ -85,7 +85,7 @@ Object {
                 href="/search"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-11qr2p8-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
@@ -94,6 +94,66 @@ Object {
                     class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
                   />
                 </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
+          >
+            <div
+              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+            >
+              <div
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-gi7hi0-MuiTypography-root"
+              >
+                Мои контакты
+              </div>
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15z76vi-MuiTypography-root-MuiLink-root"
+                href="mailto: sb_aktau@bk.ru"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="EmailIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1ybbsdq-MuiTypography-root"
+                >
+                  Email
+                </p>
+              </a>
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root"
+                href="https://tlgg.ru/@SergeyBernyakovich"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="TelegramIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"
+                  />
+                </svg>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1ybbsdq-MuiTypography-root"
+                >
+                  Telegramm
+                </p>
               </a>
             </div>
           </div>
@@ -107,7 +167,7 @@ Object {
       data-testid="HomeMenu"
     >
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
@@ -124,7 +184,7 @@ Object {
             class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
           >
             <div
-              class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-1y15g74-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-gi7hi0-MuiTypography-root"
             >
               Мое портфолио
             </div>
@@ -136,7 +196,7 @@ Object {
               href="/user/GrayWolf83"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-11qr2p8-MuiButtonBase-root-MuiButton-root"
                 tabindex="0"
                 type="button"
               >
@@ -150,7 +210,7 @@ Object {
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
@@ -170,7 +230,7 @@ Object {
             class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
           >
             <div
-              class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-1y15g74-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-gi7hi0-MuiTypography-root"
             >
               Поиск пользователей
             </div>
@@ -182,7 +242,7 @@ Object {
               href="/search"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-11qr2p8-MuiButtonBase-root-MuiButton-root"
                 tabindex="0"
                 type="button"
               >
@@ -191,6 +251,66 @@ Object {
                   class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
                 />
               </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-zwt9xa-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <div
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-gi7hi0-MuiTypography-root"
+            >
+              Мои контакты
+            </div>
+            <a
+              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15z76vi-MuiTypography-root-MuiLink-root"
+              href="mailto: sb_aktau@bk.ru"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="EmailIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-1ybbsdq-MuiTypography-root"
+              >
+                Email
+              </p>
+            </a>
+            <a
+              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root"
+              href="https://tlgg.ru/@SergeyBernyakovich"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="TelegramIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"
+                />
+              </svg>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-1ybbsdq-MuiTypography-root"
+              >
+                Telegramm
+              </p>
             </a>
           </div>
         </div>
