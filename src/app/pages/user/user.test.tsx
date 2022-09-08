@@ -19,7 +19,7 @@ describe('User page', () => {
 		expect(user).toBeInTheDocument()
 	})
 
-	test('User page rendered components GoBackButton & UserInfo & UserTechnologies & UserRepos', () => {
+	test('User page rendered components GoBackButton & UserInfo & UserTechnologies & UserBio & UserRepos', () => {
 		render(
 			<Provider store={store}>
 				<BrowserRouter>
@@ -31,6 +31,7 @@ describe('User page', () => {
 		expect(screen.getByTestId('GoBackButton')).toBeInTheDocument()
 		expect(screen.getByTestId('UserInfo')).toBeInTheDocument()
 		expect(screen.getByTestId('UserTechnologies')).toBeInTheDocument()
+		expect(screen.getByTestId('UserBio')).toBeInTheDocument()
 		expect(screen.getByTestId('UserRepos')).toBeInTheDocument()
 	})
 

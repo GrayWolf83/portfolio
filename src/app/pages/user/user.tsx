@@ -3,6 +3,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import GoBackButton from '../../components/GoBackButton'
 import GoToHomeButton from '../../components/GoToHomeButton'
+import UserBio from '../../components/UserBio'
 import UserInfo from '../../components/UserInfo'
 import UserRepos from '../../components/UserRepos'
 import UserTechnologies from '../../components/UserTechnologies'
@@ -35,6 +36,7 @@ const User: React.FC<IUser> = () => {
 			<GoBackButton />
 			<Grid container spacing={3}>
 				<UserInfo />
+				<UserBio />
 				<UserTechnologies />
 				<UserRepos />
 			</Grid>

@@ -1,13 +1,24 @@
 import { Alert, Box, Button, Snackbar, TextField } from '@mui/material'
 import React from 'react'
-import { useAppDispatch } from '../../hooks/useAppReduxHooks'
-import { searchUsersList } from '../../store/search'
+import { useAppDispatch, useAppSelector } from '../../hooks/useAppReduxHooks'
+import { getSearchValue, searchUsersList } from '../../store/search'
 
 interface ISearchInput {}
 
 const SearchInput: React.FC<ISearchInput> = () => {
 	const [searchValue, setSearchValue] = React.useState<string>('')
 	const [open, setOpen] = React.useState(false)
+	const search = useAppSelector(getSearchValue())
+
+	React.useEffect(() => {
+		document.title = 'Поиск | GitHub view'
+	}, [])
+
+	React.useEffect(() => {
+		if (search) {
+			setSearchValue(search)
+		}
+	}, [])
 
 	const handleClose = (
 		event?: React.SyntheticEvent | Event,
@@ -34,10 +45,6 @@ const SearchInput: React.FC<ISearchInput> = () => {
 
 		setOpen(true)
 	}
-
-	React.useEffect(() => {
-		document.title = 'Поиск | GitHub view'
-	}, [])
 
 	return (
 		<Box
