@@ -1,59 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserTechnologies component UserTechnologies snapshot 1`] = `
+exports[`AppPagination component AppPagination snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-13i4rnv-MuiGrid-root"
-        data-testid="UserTechnologies"
-      >
-        <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-84mkcn-MuiPaper-root-MuiCard-root"
-        >
-          <div
-            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
-          >
-            <h6
-              class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
-            >
-              Технологии:
-            </h6>
-            <p
-              class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
-            >
-              Нет данных для отображения
-            </p>
-          </div>
-        </div>
-      </div>
+        data-testid="AppPagination"
+      />
     </div>
   </body>,
   "container": <div>
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-13i4rnv-MuiGrid-root"
-      data-testid="UserTechnologies"
-    >
-      <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-84mkcn-MuiPaper-root-MuiCard-root"
-      >
-        <div
-          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
-        >
-          <h6
-            class="MuiTypography-root MuiTypography-h6 css-oblp1g-MuiTypography-root"
-          >
-            Технологии:
-          </h6>
-          <p
-            class="MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
-          >
-            Нет данных для отображения
-          </p>
-        </div>
-      </div>
-    </div>
+      data-testid="AppPagination"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

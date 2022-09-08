@@ -19,11 +19,16 @@ const UserRepos: React.FC<IUserRepos> = () => {
 	return (
 		<Grid item xs={12} data-testid='UserRepos' sx={{ width: '100%' }}>
 			<Card>
-				{repos.length && !isLoading ? (
-					<CardContent>
+				<CardContent>
+					{isLoading ? (
+						<Loader />
+					) : (
 						<Typography variant='h6' color='primary'>
 							Проекты:
 						</Typography>
+					)}
+
+					{Boolean(repos.length) && !isLoading && (
 						<Grid
 							container
 							spacing={2}
@@ -60,7 +65,16 @@ const UserRepos: React.FC<IUserRepos> = () => {
 												).toLocaleDateString()}
 											</Typography>
 										</CardContent>
-										<CardActions>
+										<CardActions
+											sx={{
+												display: 'flex',
+												justifyContent: 'space-between',
+											}}>
+											<Link
+												href={repo.html_url}
+												target='_blank'>
+												<Button>GitHub</Button>
+											</Link>
 											{repo.homepage && (
 												<Link
 													href={repo.homepage}
@@ -73,10 +87,13 @@ const UserRepos: React.FC<IUserRepos> = () => {
 								</Grid>
 							))}
 						</Grid>
-					</CardContent>
-				) : (
-					<Loader />
-				)}
+					)}
+					{!Boolean(repos.length) && !isLoading && (
+						<Typography variant='body1' color='primary'>
+							Нет проектов для отображения
+						</Typography>
+					)}
+				</CardContent>
 			</Card>
 		</Grid>
 	)
