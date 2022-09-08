@@ -10,10 +10,10 @@ Object {
         data-testid="UserTechnologies"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kdyc3g-MuiPaper-root-MuiCard-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-u5bj03-MuiPaper-root-MuiCard-root"
         >
           <h6
-            class="MuiTypography-root MuiTypography-h6 css-1v20ful-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h6 css-khsj22-MuiTypography-root"
           >
             Технологии:
           </h6>
@@ -51,10 +51,10 @@ Object {
       data-testid="UserTechnologies"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kdyc3g-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-u5bj03-MuiPaper-root-MuiCard-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-h6 css-1v20ful-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h6 css-khsj22-MuiTypography-root"
         >
           Технологии:
         </h6>
